@@ -17,7 +17,7 @@ try:
     os.system('/etc/init.d/apache2 start >/dev/null 2>&1')
     os.system('/etc/init.d/mysql start >/dev/null 2>&1')
 except:
-    print 'Opps, I could not start apache2 or MySQL'
+    print ('Opps, I could not start apache2 or MySQL') 
 
 if not os.path.exists('./Modules/dbconnect.conf'):
     # ~ print "DB Config 'dbconnect.conf' file doesn't seem to exist."
